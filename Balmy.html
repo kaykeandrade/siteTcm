@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <title> Balmy </title>
+        <meta charset="utf-8"/>
+        <style type="text/css">
+            *
+        {
+            margin: 0 auto;
+            padding: 0;
+        }
+            html
+        {
+            overflow-x:hidden;
+        }
+            body
+        {
+            background-color: #e4e1dc;
+            font-size: 2vw;
+            color:white;
+        }
+            ::-webkit-scrollbar-track 
+        {
+            background-color:  #e4e1dc;
+        }
+            ::-webkit-scrollbar 
+        {
+            width: 10px;
+            background: #e4e1dc;
+        }
+            ::-webkit-scrollbar-thumb 
+        {
+            background:#242424;
+            border-radius: 3px;
+        }
+
+            video
+	    {
+            max-width: 100%;
+            display: block;
+            position:absolute;
+	    }
+            .menu
+        {
+            width: 100%;
+            height: 40px;
+            position: fixed;
+            background-color: #e4e1dc;
+            font-family:'Arial Narrow';
+            letter-spacing: 3px;
+            top:0px;
+            font-size:large;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+            .menu ul
+        {
+            list-style: none;
+            position: relative;
+        }
+            .menu ul li
+        {
+            width: 150px;
+            float: left;
+        }
+            .menu a
+        {
+            display: block;
+            text-decoration: none;
+            padding: 15px;
+            text-align: center;
+            background-color: #e4e1dc;
+            color: #242424;
+        }
+            .menu ul ul 
+        {
+            position: absolute;
+            visibility: hidden;
+        }
+            .menu ul li:hover ul
+            {
+            visibility:visible;
+            color: #004d88;
+        }
+            .menu a:hover
+        {
+            -webkit-transition: 0.2s ease-out;
+            -moz-transition: 0.2s ease-out;
+            -o-transition: 0.2s ease-out;
+            transition: 0.2s ease-out;
+            background-color: #caced1;
+            color: #004d88;
+        }
+            .menu ul ul li
+        {
+            float: none;
+        }
+            label[for="bt_menu"]
+        {
+            padding: 5px;
+            font-family:'Arial Narrow';
+            font-size: medium;
+            cursor: pointer;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            position: fixed;
+            border-radius:5px;
+        }
+            #bt_menu
+        {
+            display: none;
+        }
+            label[for="bt_menu"]
+        {
+            display: none;
+        }
+            @media(max-width: 800px)
+        {
+                label[for="bt_menu"]
+            {
+                display: block;
+            }
+                #bt_menu:checked ~ .menu
+            {
+                margin-left:0 ;
+            }
+                .menu
+            {
+                margin-top: 30px;
+                margin-left: -100%;
+                transition: all .4s;
+            }
+                .menu ul li
+            {
+                width: 100%;
+                float: none;
+            }
+                .menu ul ul
+            {
+                position: static;
+                overflow: hidden;
+                max-height:0;
+                transition: all .4s;
+            }
+                .menu ul li:hover ul
+            {
+                height: auto;
+                max-height:400px;
+                -webkit-transition: 0.5s ease-out;
+                -moz-transition: 0.5s ease-out;
+                -o-transition: 0.5s ease-out;
+                transition: 0.5s ease-out;
+                color: #004d88;
+                background-color: #caced1;
+            }
+        }
+            #logo
+        {
+            position: fixed;
+            width: 5%;
+            height: auto;
+            left: 65%;
+            right: 30%;
+            top: -30px;
+        }
+            #caixa
+        {
+            height: 6300px;
+            width: 100%;
+            position:absolute;
+            border-radius: 50px;
+            top: 700px;
+            background-color:#e4e1dc;
+            box-shadow: 10px 15px 20px 1px rgba(0, 0, 0, 0.212);
+        }
+            #Portifolio
+        {
+            height: 900px;
+            width: 95%;
+            left: 2.5%;
+            right: 2.5%;
+            position:absolute;
+            border-radius: 50px;
+            background-color:#e4e1dc;
+            box-shadow: 10px 15px 20px 1px rgba(0, 0, 0, 0.212);
+        }
+            #Portifolio:hover
+        {
+            background-color:rgb(0, 158, 224);
+            -webkit-transition: 0.5s ease-out;
+            -moz-transition: 0.5s ease-out;
+            -o-transition: 0.5s ease-out;
+            transition: 0.5s ease-out;
+        }
+            h5
+        {
+            font-family:'Lucida Sans Unicode';
+            font-weight: 400;
+            font-size:35px;
+            color:#e4e1dc;;
+        }
+            h5:hover
+        {
+            -webkit-transition: 0.5s ease-out;
+            -moz-transition: 0.5s ease-out;
+            -o-transition: 0.5s ease-out;
+            transition: 0.5s ease-out;
+            color:rgb(255, 255, 255);
+        }
+            h3:hover
+        {
+            -webkit-transition: 0.5s ease-out;
+            -moz-transition: 0.5s ease-out;
+            -o-transition: 0.5s ease-out;
+            transition: 0.5s ease-out;
+            color:rgb(3, 84, 190);
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap'); 
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;1,300&display=swap');  
+
+            h3
+        {
+            
+            font-family:'Lucida Sans Unicode';
+            font-weight: 400;
+            font-size: large;
+            color: #252525;
+        }
+            h4
+        {
+            font-family:'Lucida Sans Unicode';
+            font-weight: 400;
+            font-size:40px;
+            color:rgb(0, 158, 224);
+        }
+            footer
+        {
+            height:600px;
+            top: 7100px;
+            width: 70%;
+            left: 15%;
+            right: 15%;
+            position: absolute;
+            list-style-type: none;
+        }
+            table
+        {
+            padding: 70px;
+        }
+            td
+        {
+            padding-bottom: 10px;
+        }
+            #Contato
+        {
+            position: absolute;
+            width: 100%;
+            height:900px;
+            top: 5600px;
+        }
+            ul
+        {
+            list-style-type: none;
+        }
+    </style>
+    </head>
+    <body>
+        <p id="1"></p>
+        <video controls autoplay loop>
+            <source src="balmy.mp4" type="video/mp4"/>
+        </video>
+        <input type="checkbox" id="bt_menu">
+        <label for="bt_menu">&#9776;</label>
+        <center>
+         <div id="caixa">
+            <br>
+            <p id="aa"></p>
+            <table>
+                <tr>
+                    <td><h4>Sobre nós</h4></td>
+                </tr>
+                <tr>
+                    <td><h3><br>
+                        A Balmy Softwares é uma empresa de desenvolvimento
+                        de sistemas brasileira fundada em 2020 por um grupo de
+                        estudantes que se apaixonaram pela área e também virão
+                        uma grande oportunidade de crescimento profissional. </h3></td>
+                </tr>
+            </table>
+            <p id="b"></p>
+            <table>
+                <tr>
+                    <td rowspan="2"><img src="missao.png"/></td>
+                    <td><h4>Missão</h4></td>
+                    <tr>
+                        <td><h3>A nossa missão é poder ajudar você
+                                a ter um trabalho mais agradável e
+                                produtivo, automatizando tarefas
+                                chatas e repetitivas.
+                        </h3></td>
+                    </tr>
+                </tr>
+                <tr>
+                    <td rowspan="2"><img src="visao.png"/></td>
+                    <td><h4>Visão</h4></td>
+                    <tr>
+                        <td><h3>Almejamos ser uma grande empresa de
+                            desenvolvimento de sistemas e para isso
+                            buscamos melhorar a cada dia.
+                        </h3></td>
+                    </tr>
+                </tr>
+                <tr>
+                    <td rowspan="2"><img src="valores.png"/></td>
+                    <td><h4>Valores</h4></td>
+                    <tr>
+                        <td><h3>Buscamos sempre manter a tranparência
+                            com os nossos clientes, além de cumprir os
+                            prazos e fornecer todo o suporte necessário.
+                        </h3></td>
+                    </tr>
+                </tr>
+            </table>
+            <h4>Equipe</h4>
+            <table>
+                <tr>
+                    <p id="c"></p>
+                    <td rowspan="2"><img src="guilherme.png"/></td>
+                    <td><h4>Guilherme</h4><h3>Analista de Banco de dados</h3></td>
+                    <tr>
+                    </tr>
+                </tr>
+                <tr>
+                    <td rowspan="2"><img src="Kayke.png"/></td>
+                    <td><h4>Kayke</h4><h3>Analista de Sistema</h3></td>
+                    <tr>
+                    </tr>
+                </tr>
+                <tr>
+                    <td rowspan="2"><img src="Leonardo.png"/></td>
+                    <td><h4>Leonardo</h4><h3>Desenvolvedor Web</h3></td>
+                    <tr>
+                    </tr>
+                </tr>
+                <tr>
+                    <td rowspan="2"><img src="luiza.png"/></td>
+                    <td><h4>Luiza</h4><h3>Desenvolvedora de Software e Designer</h3></td>
+                    <tr>
+                    </tr>
+                </tr>
+                <tr>
+                    <td rowspan="2"><img src="pedro.png"/></td>
+                    <td><h4>Pedro</h4><h3>Analista Back-end e Analista de Banco de dados.</h3></td>
+                    <tr>
+                    </tr>
+                </tr>
+            </table>
+            <table>
+                <p id="d"></p>
+                <h4>Sustentabilidade</h4>
+                <tr>
+                    <td rowspan="2"><img src="sustentabilidade.png"/></td>
+                    <td><h3>A Balmy sabe o quanto que é importante pensar no meio ambiente
+                        por isso, buscamos aplicar todos os conhecimento de como ter uma TI verde.</h3>
+                    </h3></td>
+                    <tr>
+                    </tr>
+                </tr>
+            </table>
+            <table>
+                <h4>Serviços</h4>
+                <tr><p id="e"></p>
+                    <td rowspan="2"><img src="sites.png"/></td>
+                    <td><h4>Criação e <br> manutenção de Sites e Softwares </h4><h3>✔Sites responsivos</h3><h3>✔Softwares de qualidade</h3><h3>✔100% personalizado</h3>
+                    </h3></td>
+                    <tr>
+                    </tr>
+                </tr>
+                <tr>
+                    <td><br><br></td>
+                </tr>
+                <tr><p id="f"></p>
+                    <td rowspan="2"><img src="design.png"/></td>
+                    <td><h4>Design<h3>✔Banners</h3><h3>✔Flyers</h3><h3>✔Cartão interativo</h3><h3>✔Prototipação de sites e softwares</h3><h3>✔Logotipos</h3>
+                    </h3></td>
+                    <tr>
+                    </tr>
+                </tr>
+            </table>
+            <p id="3"></p>
+            <div id="Portifolio">
+                <br>
+                <h4>Portifolio</h4>
+                <br><br><br><br>
+                <h5>Em breve</h5>
+            </div>
+            <br><br>
+            <p id="4"></p>
+            <div id="Contato">
+                <p id="g"></p>
+                <h4>Localização</h4> <br>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.322157794315!2d-46.73081678502303!3d-23.52091268470298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef8c1d371ec31%3A0x671c9325c275132e!2sETEC%20Professor%20Basilides%20de%20Godoy.!5e0!3m2!1spt-BR!2sbr!4v1594737765159!5m2!1spt-BR!2sbr" width="100%" height="500" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </div>
+        </center>
+        <nav class="menu">
+            <ul>
+                <li>&nbsp;</li>
+                <li><a href="#1">Home</a>
+                    <ul>
+                        <li><a href="#aa">Sobre nós</a></li>
+                        <li><a href="#b">Missão, visão e valores</a></li>
+                        <li><a href="#c">Equipe</a></li>
+                        <li><a href="#d">Sustenta-<br>bilidade</a></li>
+                    </ul>
+                </li>
+                <li><a href="#2">Serviços</a>
+                    <ul>
+                        <li><a href="#e">Crianção e manutenção de Softwares e Sites</a></li>
+                        <li><a href="#f">Design</a></li>
+                    </ul>
+                </li>
+                <li><a href="#3">Portifólio</a></li>
+                <li><a href="#4">Contato</a>
+                    <ul>
+                        <li><a href="#g">Localização</a></li>
+                        <li><a href="#h">Redes Sociais</a></li>
+                        <li><a href="#h">SAC</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div id="logo">
+            <img src="logo.svg"/>
+        </div>
+        <footer>
+            <p id="h"></p>
+            <h4>Entre em contato conosco!</h4>
+            <br><br>
+            <ul class="social">
+                <li>
+                    <a href="#"><img src="face.png"/></a> 
+                    <a href="#"><img src="ins.png"/></a>
+                    <a href="#"><img src="in.png"/></a>
+                    <a href="#"><img src="g.png"/></a>
+                    <a href="#"><img src="wp.png"/></a>
+                </li>
+            </ul>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   viewBox="0 0 252 144"
+   id="svg14"
+   height="144"
+   width="252"
+   version="1.1">
+  <metadata
+     id="metadata20">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs18" />
+  <path
+     id="path2"
+     style="fill:#09aff0;fill-opacity:0;fill-rule:evenodd"
+     d="m 37.2791,87.0501 18.368,-52.8915 q -0.601,1.7306 0.9853,1.4662 l 39.5714,-6.5947 q 1.5863,-0.2643 2.1872,-1.9948 L 80.0231,79.9267 q 0.6009,-1.7305 -0.9854,-1.4661 l -39.5713,6.5946 q -1.5864,0.2644 -2.1873,1.9949 z" />
+  <path
+     id="path4"
+     style="fill:#1eb7f0;fill-opacity:0;fill-rule:evenodd"
+     d="m 38.2539,90.9025 19.0184,-55.306 q -0.7526,2.1885 -0.3203,3.5139 l 7.2646,22.274 q 0.4323,1.3254 1.1849,-0.8632 l -19.0185,55.306 q 0.7526,-2.1885 0.3204,-3.5139 l -7.2647,-22.274 q -0.4322,-1.3254 -1.1848,0.8632 z" />
+  <text
+     id="text8"
+     y="82.493896"
+     x="93.550697">
+    <tspan
+       style="font-size:36.5px;font-family:'Century Gothic';fill:#009ee0"
+       id="tspan6"
+       font-size="36.5000">balmy</tspan>
+  </text>
+  <text
+     id="text12"
+     y="91.585701"
+     x="94.852303">
+    <tspan
+       style="font-size:9.5px;font-family:Consolas;fill:#84756f"
+       id="tspan10"
+       font-size="9.5000">S O F T W A R E S</tspan>
+  </text>
+</svg>
